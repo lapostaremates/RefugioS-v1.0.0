@@ -14,6 +14,7 @@ import com.google.android.material.appbar.MaterialToolbar
 import com.refugios.data.MedicinalPlant
 import com.refugios.data.PlantsDatabase
 import com.refugios.data.PlantsAdapter
+import com.refugios.data.PlantDetailActivity
 
 class PlantsActivity : AppCompatActivity() {
 

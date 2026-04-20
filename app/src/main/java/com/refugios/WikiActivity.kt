@@ -94,10 +94,9 @@ class WikiActivity : AppCompatActivity() {
         webView.loadUrl(htmlPath)
     }
 
-    override fun onBackPressed(): Boolean {
-        return if (webView.canGoBack()) {
+    override fun onBackPressed() {
+        if (webView.canGoBack()) {
             webView.goBack()
-            true
         } else {
             super.onBackPressed()
         }
