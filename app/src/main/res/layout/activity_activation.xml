@@ -68,6 +68,7 @@
                     android:padding="12dp"
                     android:textSize="14sp"
                     android:fontFamily="monospace"
+                    android:textColor="@color/text_primary"
                     android:textIsSelectable="true" />
 
                 <TextView
@@ -89,6 +90,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textCapCharacters"
+                        android:textColor="@color/text_primary"
                         android:textSize="14sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
