@@ -46,11 +46,11 @@ jobs:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          key: ${{ runner.os }}-gradle80-${{ hashFiles('**/*.gradle*') }}
           restore-keys: |
-            ${{ runner.os }}-gradle-
+            ${{ runner.os }}-gradle80-
             
-      - name: Install Gradle
+      - name: Install Gradle 8.0
         run: |
           wget -q https://services.gradle.org/distributions/gradle-8.0-bin.zip -O gradle.zip
           unzip -q gradle.zip
