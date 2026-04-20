@@ -69,27 +69,32 @@ Crea esta estructura en tu pendrive de 64GB:
   https://download.kiwix.org/zim/wiktionary/wiktionary_es_all_nopic_2026-03.zim
   ```
 
-### Mapas Offline (Organic Maps)
+### Mapas Offline (OSMDroid)
 
-Descarga desde: https://organicmaps.app/
+La aplicación utiliza OSMDroid. Tienes dos excelentes opciones para descargar los mapas de Latinoamérica de forma gratuita y nativa:
 
-1. **App Organic Maps** (recomendada):
-   - Descarga los mapas que necesites desde la app
-   - Los archivos se guardan en `/storage/emulated/0/OrganicMaps/`
-   - Copia esa carpeta al pendrive
+Opción 1: **BBBike (Recomendada y más fácil)**
+Permite seleccionar una zona exacta del mundo (ej. tu país o varios juntos) y descargarla lista para usar.
+1. Entra a [extract.bbbike.org](https://extract.bbbike.org/)
+2. En la opción Format elige **MBTiles (OSM)** o **SQLite**.
+3. Selecciona tu zona naranja en el mapa y presiona Extract.
+4. Exporta y descarga el archivo (`.mbtiles` o `.sqlite`).
+5. Cópialo directamente a la carpeta `maps/` de tu pendrive.
 
-2. **Estructura esperada**:
-```
+Opción 2: **Mobile Atlas Creator (MOBAC)**
+Es un programa avanzado de PC para descargar áreas con diferentes niveles de zoom de muchas fuentes.
+1. Descarga el programa desde [mobac.sourceforge.io](https://mobac.sourceforge.io/)
+2. Selecciona la región arrastrando con tu ratón.
+3. Elige como "Atlas format" (formato de salida) **Osmdroid SQLite** o **Osmdroid ZIP**.
+4. Cópialo a la carpeta `maps/`.
+
+**Estructura esperada**:
+```text
 /refugios/
 ├── maps/
-│   ├── europe/
-│   │   └── europe.obf
-│   └── world/
-│       └── world.obf
+│   ├── latinoamerica.mbtiles
+│   └── mi_pais.sqlite
 ```
-
-3. **O usar osmdroid tile cache**:
-   - Copia la carpeta `tiles` de osmdroid al pendrive
 
 ### Guías PDF
 
