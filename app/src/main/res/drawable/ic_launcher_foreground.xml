@@ -1,0 +1,57 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Background circle -->
+    <path
+        android:fillColor="#1E3A5F"
+        android:pathData="M54,0C24.18,0 0,24.18 0,54s24.18,54 54,54 54,-24.18 54,-54S83.82,0 54,0z"/>
+    <!-- Gas mask outer circle -->
+    <path
+        android:fillColor="#2D5A7E"
+        android:pathData="M54,16c-20.98,0 -38,17.02 -38,38s17.02,38 38,38 38,-17.02 38,-38S74.98,16 54,16z"/>
+    <!-- Filter canister -->
+    <path
+        android:fillColor="#4A4A4A"
+        android:pathData="M54,28c-14.36,0 -26,11.64 -26,26s11.64,26 26,26 26,-11.64 26,-26S68.36,28 54,28z"/>
+    <path
+        android:fillColor="#6B6B6B"
+        android:pathData="M54,32c-12.2,0 -22,9.8 -22,22s9.8,22 22,22 22,-9.8 22,-22S66.2,32 54,32z"/>
+    <!-- Filter lines -->
+    <path
+        android:fillColor="#3D3D3D"
+        android:pathData="M42,44v20M54,44v20M66,44v20"
+        android:strokeWidth="2"
+        android:strokeColor="#3D3D3D"/>
+    <!-- Eye lenses -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M42,48c-2.76,0 -5,2.24 -5,5s2.24,5 5,5 5,-2.24 5,-5 -2.24,-5 -5,-5z"/>
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M66,48c-2.76,0 -5,2.24 -5,5s2.24,5 5,5 5,-2.24 5,-5 -2.24,-5 -5,-5z"/>
+    <!-- Lens reflection -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.5"
+        android:pathData="M40,46c-1.5,0 -2.5,1 -2.5,2.5s1,2.5 2.5,2.5 2.5,-1 2.5,-2.5 -1,-2.5 -2.5,-2.5z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.5"
+        android:pathData="M64,46c-1.5,0 -2.5,1 -2.5,2.5s1,2.5 2.5,2.5 2.5,-1 2.5,-2.5 -1,-2.5 -2.5,-2.5z"/>
+    <!-- Side straps -->
+    <path
+        android:fillColor="#1E3A5F"
+        android:pathData="M18,38h8v8h-8zM82,38h8v8h-8z"
+        android:strokeColor="#1E3A5F"
+        android:strokeWidth="2"/>
+    <!-- Exhalation valve -->
+    <path
+        android:fillColor="#4A4A4A"
+        android:pathData="M42,70h6v6h-6zM60,70h6v6h-6z"/>
+    <!-- Text: R -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M52,60l4,-8h-6l-4,8zM52,52v8"/>
+</vector>
