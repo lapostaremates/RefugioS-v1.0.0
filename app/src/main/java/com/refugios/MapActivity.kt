@@ -83,7 +83,7 @@ class MapActivity : AppCompatActivity() {
 
         val offlineTiles = findOfflineTiles()
         if (offlineTiles.isNotEmpty()) {
-            mapView.tileProvider.clearCache()
+            mapView.tileProvider.clearTileCache()
             offlineTiles.forEach { path ->
                 Configuration.getInstance().osmdroidBasePath = File(path).parentFile
             }

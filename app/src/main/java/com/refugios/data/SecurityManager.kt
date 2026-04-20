@@ -71,7 +71,7 @@ class SecurityManager(private val context: Context) {
         return try {
             File("/system/bin/debuggerd").exists() ||
             File("/system/bin/gdbserver").exists() ||
-            Runtime.getRuntime().exec("which strace").inputStream.readText().isNotEmpty()
+            Runtime.getRuntime().exec("which strace").inputStream.bufferedReader().readText().isNotEmpty()
         } catch (e: Exception) {
             false
         }
