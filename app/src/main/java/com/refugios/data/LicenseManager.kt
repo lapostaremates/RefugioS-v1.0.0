@@ -68,7 +68,7 @@ xHxg8eKYpL9k3vKqNxHxg8eKYpL9k3vKqNxHxg8eKYpL9k3vKqNxHxg8eKYpL
         val salt = "REFUGIOS_V1_SURVIVAL"
         val combined = "$deviceId$salt"
         val hash = sha256(combined)
-        return hash.take(8) + "-" + hash.substring(8, 12) + "-" + hash.substring(12, 16)
+        return hash.take(4) + "-" + hash.substring(4, 8) + "-" + hash.substring(8, 12)
     }
 
     fun isLicensed(): Boolean {
